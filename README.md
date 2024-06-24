@@ -1,7 +1,7 @@
-# Teste-em-Java
+Pessoa.java
 import java.time.LocalDate;
 
-public class Pessoa {
+class Pessoa {
     private String nome;
     private LocalDate dataNascimento;
 
@@ -18,10 +18,11 @@ public class Pessoa {
         return dataNascimento;
     }
 }
+funcionario.java
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class Funcionario extends Pessoa {
+class Funcionario extends Pessoa {
     private BigDecimal salario;
     private String funcao;
 
@@ -43,6 +44,7 @@ public class Funcionario extends Pessoa {
         return funcao;
     }
 }
+principal.java
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.time.LocalDate;
@@ -51,7 +53,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Principal {
-
     public static void main(String[] args) {
         List<Funcionario> funcionarios = new ArrayList<>();
 
@@ -138,4 +139,3 @@ public class Principal {
         }
     }
 }
-
